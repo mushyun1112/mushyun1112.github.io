@@ -1,0 +1,144 @@
+body {
+    background-color:white; 
+    font-family:arial;
+    font-size:19px;
+    line-height:21px;
+    color:#000000
+    
+}
+
+img{
+    width:100%;
+}
+
+div.title {
+    font-size: 55px;
+    line-height:50px;
+}
+
+div.subtitle {
+    font-size:28px;
+    line-height:28px;
+}
+
+div.bodytext {
+    font-size:19px;
+    line-height: 21px;
+    padding:20px;
+    margin-left: auto;
+    color:greenyellow; 
+}
+
+/* Typography */
+
+div.ltext{
+    font-size:120px;
+    line-height:100px;
+}
+
+div.mtext {
+    font-size:40px;
+    line-height: 41px;
+}
+
+div.stext {
+    font-size:20px;
+    line-height: 21px;
+}
+
+div.xstext {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+div.textindent {
+    text-indent: 180px;
+}
+
+div.cyan{
+    color:cyan
+}
+
+/* Background Colours */
+
+div.bgpink{
+    background-color:magenta;
+}
+
+div.bgcyan {
+    background-color:cyan
+}
+
+div.sans{
+    font-family:arial;
+}
+
+div.serif{
+    font-family:times;
+}
+
+div.mb {
+    margin-bottom:180px;
+}
+
+div.mbsmall{
+    margin-bottom: 60px;
+}
+
+div.mt {
+    margin-top:100px;
+}
+
+div.ml{
+    margin-left:100px;
+}
+
+div.mlauto{
+    margin-left:auto;
+}
+
+div.mr{
+    margin-right:100px;
+}
+
+div.mrauto{
+    margin-right:auto;
+}
+
+
+div.pad{
+    padding:20px;
+}
+
+/* width */
+
+div.width100 {
+    width: 100%;
+}
+div.width66 {
+    width: 66.666%;
+}
+
+div.width33 {
+    width: 33.333%;
+
+}
+div.width50 {
+    width:50%;
+}
+
+div.width25 {
+    width:25%;
+    border:1px solid white;
+}
+
+div.width75 {
+    width:75%;
+}
+
+/* Layout */
+
+div.container{
+    display:flex;
+    flex-wrap:wrap;
+}

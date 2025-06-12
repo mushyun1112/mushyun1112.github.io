@@ -1,62 +1,67 @@
+
+
 body {
-    background-color:white; 
-    font-family:arial;
+    background-image: url('assets/bgpic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps background fixed while scrolling */
+    margin: 0;
+    padding: 0;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-size:19px;
     line-height:21px;
-    color:#000000
+    color:#9aff14
     
 }
 
-img{
+img, video{
     width:100%;
+    display: block;
 }
 
-div.title {
-    font-size: 55px;
-    line-height:50px;
+/* hero video */
+div.herovideo{
+    width:300px;
+    position:fixed;
+    top:20px;
+    right:20px;
 }
 
-div.subtitle {
-    font-size:28px;
-    line-height:28px;
-}
-
-div.bodytext {
-    font-size:19px;
-    line-height: 21px;
-    padding:20px;
-    margin-left: auto;
-    color:greenyellow; 
+div.herovideo video {
+    border-radius:10px;
 }
 
 /* Typography */
 
-div.ltext{
+div.font {
+    font-family: hooneorinigyosil, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+div.largetext{
     font-size:120px;
     line-height:100px;
 }
 
-div.mtext {
+div.mediumtext {
     font-size:40px;
     line-height: 41px;
 }
 
-div.stext {
+div.smalltext {
     font-size:20px;
     line-height: 21px;
 }
 
-div.xstext {
+div.extrasmalltext {
     font-size: 14px;
     line-height: 16px;
 }
 
 div.textindent {
     text-indent: 180px;
-}
-
-div.cyan{
-    color:cyan
 }
 
 /* Background Colours */
@@ -67,14 +72,6 @@ div.bgpink{
 
 div.bgcyan {
     background-color:cyan
-}
-
-div.sans{
-    font-family:arial;
-}
-
-div.serif{
-    font-family:times;
 }
 
 div.mb {
@@ -129,7 +126,6 @@ div.width50 {
 
 div.width25 {
     width:25%;
-    border:1px solid white;
 }
 
 div.width75 {
@@ -141,4 +137,80 @@ div.width75 {
 div.container{
     display:flex;
     flex-wrap:wrap;
+}
+
+/* welcome page */
+
+div.welcome {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.welcome.visible {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* triggers and effects */
+
+body.mainpage {
+
+}
+
+body.mainpage.active {
+    background-color:black;
+    color:lime;
+}
+
+div.highlight {
+
+}
+
+div.highlight.active{
+    background-color: aquamarine;
+}
+
+div.popup{
+    position:fixed;
+    top:200px;
+    left:200px;
+    height:250px;
+    width:400px;
+    display:none;
+}
+
+div.popup.active {
+    display:block;
+}
+
+div.popup2{
+    position:fixed;
+    bottom:200px;
+    right:200px;
+    height:250px;
+    width:400px;
+    display:none;
+}
+
+div.popup2.active {
+    display:block;
+}
+
+div.bgblack {
+    background-color:black;
+    color:white;
+}
+
+div.text-white {
+    color:white;
 }
